@@ -100,8 +100,8 @@ img {
 </style>
 <body>
 
-<button onclick="container()">Open</button>
-<button onclick="container()">X</button>
+<button onclick="mySlides()">Open</button>
+<button onclick="mySlides()">X</button>
 
 
 <div class="container">
@@ -173,15 +173,15 @@ img {
 
 <script>
   
-  var myWindow;
+  var mySlides;
 
-function openWin() {
-    container = container.open();
+function openmySlides() {
+   mySlides = mySlides.open();
  
 }
 
-function closeWin() {
-   container.close();
+function closemySlides() {
+   mySlides.close();
 }
 var slideIndex = 1;
 showSlides(slideIndex);
