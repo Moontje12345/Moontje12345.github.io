@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    background-color:lightsalmon;
+    color: lightcyan;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: lightcyan;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#Capital {background-color:#7F0000;}
+#Population {background-color:#98150C;}
+#Attractions {background-color:#942007;}
+#Trip_Info {background-color:#AA170D;}
+#Tourism {background-color:#B2180E;}
+</style>
+</head>
+<body>
+
+
+    <a href="index.html"<div id="Capital" class="tabcontent"><span><h1>Capital</h1><p>Sacramento is the capital of California </p></span> </a>
+  
+</div>
+
+
+   <a href="index.html"<div id="Population" class="tabcontent"><span><h1>Population</h1><p>A look at the population of California and some important city's. </p></span> </a>
+  
+</div>
+ <a href="index.html"<div id="Attractions" class="tabcontent"><span><h1>Attractions</h1><p>Some attractions of California. </p></span> </a>
+  
+</div>
+
+<a href="index.html"<div id="Trip_Info" class="tabcontent"><span><h1>Trip Info</h1><p>Some Trip Info of California. </p></span> </a>
+  
+</div>
+
+<a href="index.html"<div id="Tourism" class="tabcontent"><span><h1>Tourism</h1><p>Tourism of Califonia. </p></span> </a>
+  
+</div>
+
+    
+
+<button class="tablink" onclick="openCity('Capital', this, '#7F0000')" >Capital</button>
+<button class="tablink" onclick="openCity('Population', this, '#98150C')">Population</button>
+<button class="tablink" onclick="openCity('Attractions', this, '#942007')">Attractions</button>
+<button class="tablink" onclick="openCity('Trip_Info', this, '#AA170D')">Trip Info</button>
+<button class="tablink" onclick="openCity('Tourism', this, '#B2180E')">Tourism</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
