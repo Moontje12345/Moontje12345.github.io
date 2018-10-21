@@ -100,6 +100,9 @@ img {
 </style>
 <body>
 
+<button onclick="container()">Open</button>
+<button onclick="container()">X</button>
+
 
 <div class="container">
   <div class="mySlides">
@@ -107,7 +110,34 @@ img {
     <img src="https://www.sabreakingnews.co.za/wp-content/uploads/2018/05/California.jpg" style="width:100%">
   </div>
 
- 
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://statesymbolsusa.org/sites/statesymbolsusa.org/files/symbol-place-images/CaliforniaCapitolSacramento-2.jpg"style="width:100%">
+   
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="C1.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F42328566%2F101442659479%2F1%2Foriginal.jpg?s=875b0dcc94ab9c598fce47bdde0aa2f1" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://i.ytimg.com/vi/kQZ3L2YFBug/maxresdefault.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://www.walletweekly.com/wp-content/uploads/2017/01/disney1.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 
   <div class="caption-container">
     <p id="caption"></p>
@@ -117,15 +147,41 @@ img {
     <div class="column">
       <img class="demo cursor" src="A.jpg" style="width:100%" onclick="currentSlide(1)" alt="California">
     </div>
- 
+    
+    <div class="column">
+      <img class="demo cursor" src="B2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Capital from Sacramento">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="c.jpg" style="width:100%" onclick="currentSlide(3)" alt="Statistic of population">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="D.png" style="width:100%" onclick="currentSlide(4)" alt="Golden Gate Bridge (night time)">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="e.jpg" style="width:100%" onclick="currentSlide(5)" alt="Yosemite National Park">
+    </div>    
+    
+    <div class="column">
+      <img class="demo cursor" src="F.jpg" style="width:100%" onclick="currentSlide(6)" alt="Disneyland park Anaheim"
+    </div>
+    
+  </div>
 </div>
-<button onclick="closeWin()">X</button>
 
 <script>
+  
+  var myWindow;
+
+function openWin() {
+    container = container.open();
+ 
 }
 
 function closeWin() {
-    myWindow.close();
+   container.close();
 }
 var slideIndex = 1;
 showSlides(slideIndex);
