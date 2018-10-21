@@ -55,6 +55,100 @@ body  {
 #Attractions {background-color:#942007;}
 #Trip_Info {background-color:#AA170D;}
 #Tourism {background-color:#B2180E;}
+            
+
+            
+            
+            * {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: lightcyan;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: lightsalmon;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: lightcyan;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: lightsalmon;
+  padding: 2px 16px;
+  color: lightcyan;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.666%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
 </style>
          
     </head>
@@ -91,6 +185,73 @@ body  {
 <button class="tablink" onclick="openCity('Trip_Info', this, '#AA170D')">Trip Info</button>
 <button class="tablink" onclick="openCity('Tourism', this, '#B2180E')">Tourism</button>
 
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://www.sabreakingnews.co.za/wp-content/uploads/2018/05/California.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://statesymbolsusa.org/sites/statesymbolsusa.org/files/symbol-place-images/CaliforniaCapitolSacramento-2.jpg"style="width:100%">
+   
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="C1.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F42328566%2F101442659479%2F1%2Foriginal.jpg?s=875b0dcc94ab9c598fce47bdde0aa2f1" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://i.ytimg.com/vi/kQZ3L2YFBug/maxresdefault.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://www.walletweekly.com/wp-content/uploads/2017/01/disney1.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="A.jpg" style="width:100%" onclick="currentSlide(1)" alt="California">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="B2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Capital from Sacramento">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="c.jpg" style="width:100%" onclick="currentSlide(3)" alt="Statistic of population">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="D.png" style="width:100%" onclick="currentSlide(4)" alt="Golden Gate Bridge (night time)">
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="e.jpg" style="width:100%" onclick="currentSlide(5)" alt="Yosemite National Park">
+    </div>    
+    
+    <div class="column">
+      <img class="demo cursor" src="F.jpg" style="width:100%" onclick="currentSlide(6)" alt="Disneyland park Anaheim"
+    </div>
+    
+  </div>
+</div>
+    
 <script>
 function openCity(cityName,elmnt,color) {
     var i, tabcontent, tablinks;
@@ -107,7 +268,37 @@ function openCity(cityName,elmnt,color) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+    
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 </script>
+
 
 
 
