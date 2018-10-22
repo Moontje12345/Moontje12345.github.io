@@ -7,34 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Project: Travel webpage</title>
         <style>
-            h1 { background-color:lightsalmon;
-               
-                 color: lightcyan;
-                font-family: hinting;
-                  width: 270px;   }
-             h1 { background-color:lightsalmon;
-               
-                 color: lightcyan;
-                font-family: hinting;
-                  width: 270px;   }
-        
-body  {
-  background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1024,c_fill,g_auto,h_576,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170606120957-california---travel-destination---shutterstock-220315747.jpg");
-  background-color:lightsalmon;
-  height: 800px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-            
-         
-
-
-            
-            
-            
-.tablink {
+        .tablink {
     background-color:lightsalmon;
     color: lightcyan;
     float: left;
@@ -45,9 +18,11 @@ body  {
     font-size: 17px;
     width: 25%;
 }
+
 .tablink:hover {
     background-color: #777;
 }
+
 /* Style the tab content */
 .tabcontent {
     color: lightcyan;
@@ -55,106 +30,17 @@ body  {
     padding: 50px;
     text-align: center;
 }
+
 #Capital {background-color:#7F0000;}
 #Population {background-color:#98150C;}
 #Attractions {background-color:#942007;}
 #Trip_Info {background-color:#AA170D;}
-#Tourism {background-color:#B2180E;}
-            
-
-            
-
-
-* {
-  box-sizing: 50%;
-}
-
-img {
-  vertical-align: middle;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
+#Tourism {background-color:#B2180E;} 
+            h1 { background-color:lightsalmon;
+               
+                 color: lightcyan;
+                font-family: hinting;
+                  width: 270px;   }
         
 body  {
   background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1024,c_fill,g_auto,h_576,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170606120957-california---travel-destination---shutterstock-220315747.jpg");
@@ -179,7 +65,7 @@ body  {
     width: 25%;
 }
 .tablink:hover {
-    background-color: #777;
+    background-color: lightsalmon;
 }
 /* Style the tab content */
 .tabcontent {
@@ -234,7 +120,7 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: lightcyan;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -300,6 +186,34 @@ img {vertical-align: middle;}
     <body>
         <h1 class="hoofding"> Travel to california</h1>
         
+        <a href="index.html"<div id="Capital" class="tabcontent"><span><h1>Capital</h1><p>Sacramento is the capital of California </p></span> </a>
+  
+</div>
+
+
+   <a href="index.html"<div id="Population" class="tabcontent"><span><h1>Population</h1><p>A look at the population of California and some important city's. </p></span> </a>
+  
+</div>
+ <a href="index.html"<div id="Attractions" class="tabcontent"><span><h1>Attractions</h1><p>Some attractions of California. </p></span> </a>
+  
+</div>
+
+<a href="index.html"<div id="Trip_Info" class="tabcontent"><span><h1>Trip Info</h1><p>Some Trip Info of California. </p></span> </a>
+  
+</div>
+
+<a href="index.html"<div id="Tourism" class="tabcontent"><span><h1>Tourism</h1><p>Tourism of Califonia. </p></span> </a>
+  
+</div>
+
+    
+
+<button class="tablink" onclick="openCity('Capital', this, '#7F0000')" >Capital</button>
+<button class="tablink" onclick="openCity('Population', this, '#98150C')">Population</button>
+<button class="tablink" onclick="openCity('Attractions', this, '#942007')">Attractions</button>
+<button class="tablink" onclick="openCity('Trip_Info', this, '#AA170D')">Trip Info</button>
+<button class="tablink" onclick="openCity('Tourism', this, '#B2180E')">Tourism</button>
+
         
        
    <a href="capital.html"<div id="Capital" class="tabcontent"><span><h2>Capital</h2><p>Sacramento is the capital of California </p></span> </a>
@@ -387,125 +301,24 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(6)"></span> 
 </div>
 
-
-
-
-
-
-
-  
-         
-    </head>
-    <body>
-        <h1 class="hoofding"> Travel to california</h1>
-        
-        
-       
-   <a href="capital.html"<div id="Capital" class="tabcontent"><span><h2>Capital</h2><p>Sacramento is the capital of California </p></span> </a>
-  
-</div>
-
-
-   <a href="Population.html"<div id="Population" class="tabcontent"><span><h2>Population</h2><p>A look at the population of California and some important city's. </p></span> </a>
-  
-</div>
- <a href="Attractions.html"<div id="Attractions" class="tabcontent"><span><h2>Attractions</h2><p>Some attractions of California. </p></span> </a>
-  
-</div>
-
-<a href="Trip_Info.html"<div id="Trip_Info" class="tabcontent"><span><h2>Trip Info</h2><p>Some Trip Info of California. </p></span> </a>
-  
-</div>
-
-<a href="Tourism.html"<div id="Tourism" class="tabcontent"><span><h2>Tourism</h2><p>Tourism of Califonia. </p></span> </a>
-  
-</div>
-
-    
-
-<button class="tablink" onclick="openCity('Capital', this, '#7F0000')" >Capital</button>
-<button class="tablink" onclick="openCity('Population', this, '#98150C')">Population</button>
-<button class="tablink" onclick="openCity('Attractions', this, '#942007')">Attractions</button>
-<button class="tablink" onclick="openCity('Trip_Info', this, '#AA170D')">Trip Info</button>
-<button class="tablink" onclick="openCity('Tourism', this, '#B2180E')">Tourism</button>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="https://www.sabreakingnews.co.za/wp-content/uploads/2018/05/California.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="https://statesymbolsusa.org/sites/statesymbolsusa.org/files/symbol-place-images/CaliforniaCapitolSacramento-2.jpg"style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="C1.jpg" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F42328566%2F101442659479%2F1%2Foriginal.jpg?s=875b0dcc94ab9c598fce47bdde0aa2f1" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="https://i.ytimg.com/vi/kQZ3L2YFBug/maxresdefault.jpg" style="width:100%">
-  </div> 
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="https://www.walletweekly.com/wp-content/uploads/2017/01/disney1.jpg" style="width:100%">
-  </div>
- 
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="A.jpg" style="width:100%" onclick="currentSlide(1)" alt="California">
-    </div>
-    
-    <div class="column">
-      <img class="demo cursor" src="B2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Capital from Sacramento">
-    </div>
-    
-    <div class="column">
-      <img class="demo cursor" src="c.jpg" style="width:100%" onclick="currentSlide(3)" alt="Statistic of population">
-    </div>
-    
-    <div class="column">
-      <img class="demo cursor" src="D.png" style="width:100%" onclick="currentSlide(4)" alt="Golden Gate Bridge (night time)">
-    </div>
-    
-    <div class="column">
-      <img class="demo cursor" src="e.jpg" style="width:100%" onclick="currentSlide(5)" alt="Yosemite National Park">
-    </div>    
-    
-    <div class="column">
-      <img class="demo cursor" src="F.jpg" style="width:100%" onclick="currentSlide(6)" alt="Disneyland park Anaheim"
-    </div>
-    
-  </div>
-</div>
-   
-    
-
 <script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();    
+    
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -532,52 +345,13 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-    function openCity(cityName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(cityName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-    
-    var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
 
 </script>
+
+
+
+
+
 
     </body>
 </html>
