@@ -16,7 +16,7 @@
 body  {
   background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1024,c_fill,g_auto,h_576,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170606120957-california---travel-destination---shutterstock-220315747.jpg");
   background-color:lightsalmon;
-  height: 900px;
+  height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -159,32 +159,30 @@ img {vertical-align: middle;}
         
         
        
-   <a href="capital.html"<div id="Capital" class="tabcontent"> </a>
-        <h2>Capital</h2>
-        <p>Sacramento is the capital of California </p>
-       
-  <span onclick="this.parentElement.style.display='none'">x</span>
+   <a href="capital.html"<div id="Capital" class="tabcontent"><span><h2>Capital</h2><p>Sacramento is the capital of California </p></span> </a>
+  
 </div>
 
 
    <a href="Population.html"<div id="Population" class="tabcontent"><span><h2>Population</h2><p>A look at the population of California and some important city's. </p></span> </a>
-  <span onclick="this.parentElement.style.display='none'">x</span>
+  
 </div>
  <a href="Attractions.html"<div id="Attractions" class="tabcontent"><span><h2>Attractions</h2><p>Some attractions of California. </p></span> </a>
-  <span onclick="this.parentElement.style.display='none'">x</span>
+  
 </div>
 
 <a href="Trip_Info.html"<div id="Trip_Info" class="tabcontent"><span><h2>Trip Info</h2><p>Some Trip Info of California. </p></span> </a>
-  <span onclick="this.parentElement.style.display='none'">x</span>
+  
 </div>
 
 <a href="Tourism.html"<div id="Tourism" class="tabcontent"><span><h2>Tourism</h2><p>Tourism of Califonia. </p></span> </a>
-  <span onclick="this.parentElement.style.display='none'">x</span>
+  
 </div>
 
     
 
 <button class="tablink" onclick="openCity('Capital', this, '#7F0000')" >Capital</button>
+<span onclick="this.parentElement.style.display='none'">x</span>
 <button class="tablink" onclick="openCity('Population', this, '#98150C')">Population</button>
 <button class="tablink" onclick="openCity('Attractions', this, '#942007')">Attractions</button>
 <button class="tablink" onclick="openCity('Trip_Info', this, '#AA170D')">Trip Info</button>
@@ -274,22 +272,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-function openCity(cityName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(cityName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
 
 </script>
 
