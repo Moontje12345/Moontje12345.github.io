@@ -1,3 +1,58 @@
-<h2 id="trip info"><strong>Trip info</strong></h2>
+<!DOCTYPE html>
+<html>
+    <head>
+        
+     
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project: Travel webpage</title>
+        <style>
+          
+        
+body  {
+  background-color:lightsalmon;
+ color: lightcyan;
+}
+              .button {
+  border-radius: 4px;
+  background-color:lightcyan;
+  border: none;
+  color: lightsalmon;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+     </style>
+     </head>
+<body>
+  <h2 id="trip info"><strong>Trip info</strong></h2>
 A flight to Los Angeles with Delta 
 KLM  cost: 797 € if you stay from 14 June untill 28 June. With one stop in New York. You have to fly for 17 hours and 30 minutes
+  <li> <a href="Startpagina.html" <button class="button"><span> klik hier om terug naar da startpagina te gaan </span></button> </a> </li>
+
+ </body>
+</html>
