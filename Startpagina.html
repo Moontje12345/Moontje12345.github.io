@@ -159,7 +159,7 @@ img {vertical-align: middle;}
         
         
        
-   <a href="capital.html"<div id="Capital" class="tabcontent"> <span onclick="this.parentElement.style.display='none'" class="topright">&times</span><span><h2>Capital</h2><p>Sacramento is the capital of California </p></span> </a>
+   <a href="capital.html"<div id="Capital" class="tabcontent"><span><h2>Capital</h2><p>Sacramento is the capital of California </p></span> </a>
   
 </div>
 
@@ -245,9 +245,6 @@ img {vertical-align: middle;}
 </div>
 
 <script>
-     tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -273,7 +270,6 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-    
 }
 
 </script>
