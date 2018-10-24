@@ -160,7 +160,7 @@ img {vertical-align: middle;}
         
        
    <a href="capital.html"<div id="Capital" class="tabcontent"><span><h2>Capital</h2><p>Sacramento is the capital of California </p></span> </a>
-  
+  <span onclick="this.parentElement.style.display='none'">x</span>
 </div>
 
 
@@ -271,6 +271,22 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+    function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
 </script>
 
