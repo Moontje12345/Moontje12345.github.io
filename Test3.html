@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -9,12 +8,44 @@ body {
 }
 
 * {
-  box-sizing: 20%;
+  box-sizing:  border-box;
 }
 
 img {
   vertical-align: middle;
 }
+              
+.tablink {
+    background-color:lightsalmon;
+    color: lightcyan;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+.tablink:hover {
+    background-color: lightsalmon;
+}
+/* Style the tab content */
+.tabcontent {
+    color: lightcyan;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+#Capital {background-color:#7F0000;}
+#Population {background-color:#98150C;}
+#Attractions {background-color:#942007;}
+#Trip_Info {background-color:#AA170D;}
+#Tourism {background-color:#B2180E;}
+            
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
 /* Position the image container (needed to position the left and right arrows) */
 .container {
@@ -47,7 +78,12 @@ img {
   user-select: none;
   -webkit-user-select: none;
 }
-
+/* Slideshow container */
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -106,66 +142,32 @@ img {
 <div class="container">
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
-    <img src="dia1.png" style="width:50%">
+    <img src="dia1.png" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 6</div>
-    <img src="<div class="row"> 
-  <div class="column">
-    <img src="1.jpg" style="width:50%">
-    <img src="2.jpg" style="width:50%">
-    <img src="3.jpg" style="width:50%">
-    <img src="4.jpg" style="width:50%">
-    <img src="5.jpg" style="width:50%">
-    <img src="6.jpg" style="width:50%">
-    <img src="7.jpg" style="width:50%">
-  </div>
-  <div class="column">
-    <img src="8.jpg" style="width:50%">
-    <img src="9.jpg" style="width:50%">
-    <img src="10.jpg" style="width:50%">
-    <img src="11.jpg" style="width:50%">
-    
-  </div>  
-  <div class="column">
-    <img src="1.jpg" style="width:50%">
-    <img src="2.jpg" style="width:50%">
-    <img src="3.jpg" style="width:50%">
-    <img src="4.jpg" style="width:50%">
-    <img src="5.jpg" style="width:50%">
-    <img src="6.jpg" style="width:50%">
-    <img src="7.jpg" style="width:50%">
-  </div>
-  <div class="column">
-    <img src="/w3images/underwater.jpg" style="width:50%">
-    <img src="/w3images/ocean.jpg" style="width:50%">
-    <img src="/w3images/wedding.jpg" style="width:50%">
-    <img src="/w3images/mountainskies.jpg" style="width:50%">
-    <img src="/w3images/rocks.jpg" style="width:50%">
-    <img src="/w3images/underwater.jpg" style="width:50%">
-  </div>
-</div>
+    <img src="dia2.png" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 6</div>  
-    <img src="dia3.png" style="width:50%">
+    <img src="dia3.png" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">4 / 6</div>
-      <img src="dia4.png" style="width:50%">
+      <img src="dia4.png" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">5 / 6</div>
-     <img src="dia5.png" style="width:50%">
+     <img src="dia5.png" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">6 / 6</div>
-      <img src="dia6.png" style="width:50%">
+      <img src="dia6.png" style="width:100%">
   </div>
     
   <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -177,22 +179,22 @@ img {
 
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="dia1.png" style="width:50%" onclick="currentSlide(1)" alt="Paris">
+      <img class="demo cursor" src="dia1.png" style="width:100%" onclick="currentSlide(1)" alt="Paris">
     </div>
     <div class="column">
-      <img class="demo cursor" src="dia2.png" style="width:50%" onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="dia2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
     </div>
     <div class="column">
-      <img class="demo cursor" src="dia3.png" style="width:50%" onclick="currentSlide(3)" alt="Mounains and fjords">
+      <img class="demo cursor" src="dia3.png" style="width:100%" onclick="currentSlide(3)" alt="Mounains and fjords">
     </div>
     <div class="column">
-      <img class="demo cursor" src="dia4.png" style="width:50%" onclick="currentSlide(4)" alt="Northerns Lights">
+      <img class="demo cursor" src="dia4.png" style="width:100%" onclick="currentSlide(4)" alt="Northerns Lights">
     </div>
     <div class="column">
-      <img class="demo cursor" src="dia5.png" style="width:50%" onclick="currentSlide(5)" alt="Boissons">
+      <img class="demo cursor" src="dia5.png" style="width:100%" onclick="currentSlide(5)" alt="Boissons">
     </div>    
     <div class="column">
-      <img class="demo cursor" src="dia6.png" style="width:50%" onclick="currentSlide(6)" alt="Site touristique">
+      <img class="demo cursor" src="dia6.png" style="width:100%" onclick="currentSlide(6)" alt="Site touristique">
     </div>
   </div>
 </div>
