@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+
+   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project: Travel webpage</title>
+        <style>
+            h1 { background-color:white;
+               
+                 color: black;
+                font-family: hinting;
+                  width: 415px;   }
 body {
   font-family: Arial;
   margin: 0;
@@ -53,8 +61,8 @@ img {
   margin: auto;
 }
   .tablink {
-    background-color:lightsalmon;
-    color: lightcyan;
+    background-color:black;
+    color: white;
     float: left;
     border: none;
     outline: none;
@@ -64,20 +72,20 @@ img {
     width: 25%;
 }
 .tablink:hover {
-    background-color: lightsalmon;
+    background-color: black;
 }
 /* Style the tab content */
 .tabcontent {
-    color: lightcyan;
+    color: white;
     display: none;
     padding: 50px;
     text-align: center;
 }
-#Capital {background-color:#7F0000;}
-#Population {background-color:#98150C;}
-#Attractions {background-color:#942007;}
-#Trip_Info {background-color:#AA170D;}
-#Tourism {background-color:#B2180E;}
+#P {background-color:#7F0000;}
+#L {background-color:#98150C;}
+#S {background-color:#942007;}
+#D {background-color:#AA170D;}
+
             
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
@@ -107,14 +115,14 @@ img {vertical-align: middle;}
 }
 /* Caption text */
 .text {
-  color: lightcyan;
+  color: white;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 200px;
   text-align: center;
-  background-color: lightsalmon;
+  background-color: black;
 }
 /* Container for image text */
 .caption-container {
@@ -151,14 +159,14 @@ img {vertical-align: middle;}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: lightsalmon;
+  background-color: black;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: lightcyan;
+  background-color: white;
 }
 
 /* Fading animation */
@@ -190,24 +198,23 @@ img {vertical-align: middle;}
         
         
        
-<a href="capital.html"<div id="Capital" class="tabcontent"><span><h2>Capital</h2><p>Sacramento is the capital of California </p></span> </a>
+<a href="capital.html"<div id="P" class="tabcontent"><span><h2>Capital</h2><p>Sacramento is the capital of California </p></span> </a>
 </div>
-<a href="Population.html"<div id="Population" class="tabcontent"><span><h2>Population</h2><p>A look at the population of California and some important city's. </p></span> </a> 
+<a href="Population.html"<div id="S" class="tabcontent"><span><h2>Population</h2><p>A look at the population of California and some important city's. </p></span> </a> 
 </div>
-<a href="Attractions.html"<div id="Attractions" class="tabcontent"><span><h2>Attractions</h2><p>Some attractions of California. </p></span> </a>
+<a href="Attractions.html"<div id="L" class="tabcontent"><span><h2>Attractions</h2><p>Some attractions of California. </p></span> </a>
 </div>
-<a href="Trip_Info.html"<div id="Trip_Info" class="tabcontent"><span><h2>Trip Info</h2><p>Some Trip Info of California. </p></span> </a>
+<a href="Trip_Info.html"<div id="D" class="tabcontent"><span><h2>Trip Info</h2><p>Some Trip Info of California. </p></span> </a>
 </div>
-<a href="Tourism.html"<div id="Tourism" class="tabcontent"><span><h2>Tourism</h2><p>Tourism of Califonia. </p></span> </a>
-</div>
+
 
     
 
-<button class="tablink" onclick="openCity('Capital', this, '#7F0000')" >Capital</button>
-<button class="tablink" onclick="openCity('Population', this, '#98150C')">Population</button>
-<button class="tablink" onclick="openCity('Attractions', this, '#942007')">Attractions</button>
-<button class="tablink" onclick="openCity('Trip_Info', this, '#AA170D')">Trip Info</button>
-<button class="tablink" onclick="openCity('Tourism', this, '#B2180E')">Tourism</button>
+<button class="tablink" onclick="openCity('P', this, '#7F0000')" >Paris</button>
+<button class="tablink" onclick="openCity('L', this, '#98150C')">Les nourritures</button>
+<button class="tablink" onclick="openCity('S', this, '#942007')">Site touristique</button>
+<button class="tablink" onclick="openCity('D', this, '#AA170D')">Disneyland et l'hôtel</button>
+
 <br>
 <br>
 <br>
