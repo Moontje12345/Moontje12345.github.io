@@ -60,26 +60,43 @@ img {
   position: relative;
   margin: auto;
 }
-  .tablink {
-    background-color:black;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
-.tablink:hover {
-    background-color: black;
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
 }
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
 /* Style the tab content */
 .tabcontent {
-    color: white;
-    display: none;
-    padding: 50px;
-    text-align: center;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
 }
 #P {background-color:#7F0000;}
 #L {background-color:#98150C;}
@@ -200,9 +217,9 @@ img {vertical-align: middle;}
        
 <a href="capital.html"<div id="P" class="tabcontent"><span><h2>Paris</h2><p>Sacramento is the capital of California </p></span> </a>
 </div>
-<a href="Population.html"<div id="S" class="tabcontent"><span><h2>Les nourritures</h2><p>A look at the population of California and some important city's. </p></span> </a> 
+<a href="Population.html"<div id="L" class="tabcontent"><span><h2>Les nourritures</h2><p>A look at the population of California and some important city's. </p></span> </a> 
 </div>
-<a href="Attractions.html"<div id="L" class="tabcontent"><span><h2>Site touristiqu</h2><p>Some attractions of California. </p></span> </a>
+<a href="Attractions.html"<div id="S" class="tabcontent"><span><h2>Site touristiqu</h2><p>Some attractions of California. </p></span> </a>
 </div>
 <a href="Trip_Info.html"<div id="D" class="tabcontent"><span><h2>Disneyland et l'hôtel</h2><p>Some Trip Info of California. </p></span> </a>
 </div>
