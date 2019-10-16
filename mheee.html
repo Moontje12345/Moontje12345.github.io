@@ -60,43 +60,26 @@ img {
   position: relative;
   margin: auto;
 }
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+.tablink {
+    background-color:black;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
 }
-
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
+.tablink:hover {
+    background-color: black;
 }
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
 /* Style the tab content */
 .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
 }
 #P {background-color:#7F0000;}
 #L {background-color:#98150C;}
@@ -282,13 +265,13 @@ img {vertical-align: middle;}
       <img class="demo cursor" src="dia1.png" style="width:100%" onclick="currentSlide(1)" alt="Paris">
     </div>
     <div class="column">
-      <img class="demo cursor" src="dia2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      <img class="demo cursor" src="dia2.png" style="width:100%" onclick="currentSlide(2)" alt="Les nourritures">
     </div>
     <div class="column">
-      <img class="demo cursor" src="dia3.png" style="width:100%" onclick="currentSlide(3)" alt="Mounains and fjords">
+      <img class="demo cursor" src="dia3.png" style="width:100%" onclick="currentSlide(3)" alt="Les nourritures">
     </div>
     <div class="column">
-      <img class="demo cursor" src="dia4.png" style="width:100%" onclick="currentSlide(4)" alt="Northerns Lights">
+      <img class="demo cursor" src="dia4.png" style="width:100%" onclick="currentSlide(4)" alt="Les nourritures">
     </div>
     <div class="column">
       <img class="demo cursor" src="dia5.png" style="width:100%" onclick="currentSlide(5)" alt="Boissons">
