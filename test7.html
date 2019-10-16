@@ -34,10 +34,7 @@ img {
   vertical-align: middle;
 }
 
-/* Position the image container (needed to position the left and right arrows) */
-.container {
-  position: relative;
-}
+
 
 /* Hide the images by default */
 .mySlides {
@@ -117,10 +114,10 @@ img {
     padding: 50px;
     text-align: center;
 }
-#Paris {background-color:#7F0000;}
-#Les_nourritures {background-color:#98150C;}
-#Site_touristique{background-color:#942007;}
-#Disneyland_et_l'hôtel{background-color:#AA170D;}
+#P {background-color:#7F0000;}
+#L {background-color:#98150C;}
+#S{background-color:#942007;}
+#D{background-color:#AA170D;}
 
             
 * {box-sizing: border-box}
@@ -156,7 +153,11 @@ img {vertical-align: middle;}
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
+/* Position the "next button" to the right */
+.next {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: black;
@@ -254,10 +255,10 @@ img {vertical-align: middle;}
 
     
 
-<button class="tablink" onclick="openCity('Paris', this, '#7F0000')" >Paris</button>
-<button class="tablink" onclick="openCity('Les_nourritures', this, '#98150C')">Les nourritures</button>
-<button class="tablink" onclick="openCity('Site_touristique', this, '#942007')">Site touristique</button>
-<button class="tablink" onclick="openCity('Disneyland_et_l'hôtel', this, '#AA170D')">Disneyland et l'hôtel</button>
+<button class="tablink" onclick="openCity('P', this, '#7F0000')" >Paris</button>
+<button class="tablink" onclick="openCity('L', this, '#98150C')">Les nourritures</button>
+<button class="tablink" onclick="openCity('S', this, '#942007')">Site touristique</button>
+<button class="tablink" onclick="openCity('D', this, '#AA170D')">Disneyland et l'hôtel</button>
 
 <br>
 <br>
