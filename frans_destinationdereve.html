@@ -1,31 +1,68 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
         
-     
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Project: Travel webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Project: Destination de rêve</title>
         <style>
-            h1 { background-color:lightsalmon;
+            h1 { background-color:black;
                
-                 color: lightcyan;
+                 color: white;
                 font-family: hinting;
-                  width: 270px;   }
-        
-body  {
-  background-image: url("https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1024,c_fill,g_auto,h_576,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170606120957-california---travel-destination---shutterstock-220315747.jpg");
-  background-color:lightsalmon;
-  height: 900px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+                  width: 415px;   }
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing:  border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
   position: relative;
 }
-                      
-            
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Slideshow container */
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 .tablink {
-    background-color:lightsalmon;
-    color: lightcyan;
+    background-color:black;
+    color: white;
     float: left;
     border: none;
     outline: none;
@@ -35,87 +72,103 @@ body  {
     width: 25%;
 }
 .tablink:hover {
-    background-color: lightsalmon;
+    background-color: black;
 }
 /* Style the tab content */
 .tabcontent {
-    color: lightcyan;
+    color: white;
     display: none;
     padding: 50px;
     text-align: center;
 }
-#Capital {background-color:#7F0000;}
-#Population {background-color:#98150C;}
-#Attractions {background-color:#942007;}
-#Trip_Info {background-color:#AA170D;}
-#Tourism {background-color:#B2180E;}
+#P{background-color:#4B6285;}
+#L{background-color:#8AA6D1;}
+#S{background-color:#FE9C5B;}
+#D{background-color:#FFAC75;}
+
             
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: middle;}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: lightcyan;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
+
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: lightsalmon;
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 /* Caption text */
 .text {
-  color: lightcyan;
+  color: white;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 200px;
   text-align: center;
-  background-color: lightsalmon;
+  background-color: black;
 }
-/* Number text (1/3 etc) */
-.numbertext {
-  color: lightcyan;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
 }
-/* The dots/bullets/indicators */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+  /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: lightsalmon;
+  background-color: black;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 .active, .dot:hover {
-  background-color: lightcyan;
+  background-color: white;
 }
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -123,137 +176,143 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
             
 </style>
-         
-    </head>
-    <body>
-        <h1 class="hoofding"> Travel to california</h1>
-        
-        
+<body>
        
-   <a href="capital.html"<div id="Capital" class="tabcontent"><span><h2>Capital</h2><p>Sacramento is the capital of California </p></span> </a>
-  
+        
+         <h1 class="hoofding"> Destination de rêve en France </h1>
+       
+<a href="capital.html"<div id="P" class="tabcontent"><span><h2>Paris</h2><p>Sacramento is the capital of California </p></span> </a>
+</div>
+<a href="Population.html"<div id="L" class="tabcontent"><span><h2>Les nourritures</h2><p>A look at the population of California and some important city's. </p></span> </a> 
+</div>
+<a href="Attractions.html"<div id="S" class="tabcontent"><span><h2>Site touristiqu</h2><p>Some attractions of California. </p></span> </a>
+</div>
+<a href="Trip_Info.html"<div id="D" class="tabcontent"><span><h2>Disneyland et l'hôtel</h2><p>Some Trip Info of California. </p></span> </a>
 </div>
 
-
-   <a href="Population.html"<div id="Population" class="tabcontent"><span><h2>Population</h2><p>A look at the population of California and some important city's. </p></span> </a>
-  
-</div>
- <a href="Attractions.html"<div id="Attractions" class="tabcontent"><span><h2>Attractions</h2><p>Some attractions of California. </p></span> </a>
-  
-</div>
-
-<a href="Trip_Info.html"<div id="Trip_Info" class="tabcontent"><span><h2>Trip Info</h2><p>Some Trip Info of California. </p></span> </a>
-  
-</div>
-
-<a href="Tourism.html"<div id="Tourism" class="tabcontent"><span><h2>Tourism</h2><p>Tourism of Califonia. </p></span> </a>
-  
-</div>
 
     
 
-<button class="tablink" onclick="openCity('Capital', this, '#7F0000')" >Capital</button>
-<button class="tablink" onclick="openCity('Population', this, '#98150C')">Population</button>
-<button class="tablink" onclick="openCity('Attractions', this, '#942007')">Attractions</button>
-<button class="tablink" onclick="openCity('Trip_Info', this, '#AA170D')">Trip Info</button>
-<button class="tablink" onclick="openCity('Tourism', this, '#B2180E')">Tourism</button>
+<button class="tablink" onclick="openCity('P', this, '#4B6285')" >Paris</button>
+<button class="tablink" onclick="openCity('L', this, '#8AA6D1')">Les nourritures</button>
+<button class="tablink" onclick="openCity('S', this, '#FE9C5B')">Site touristique</button>
+<button class="tablink" onclick="openCity('D', this, '#FFAC75')">Disneyland et l'hôtel</button>
+
 <br>
 <br>
 <br>
 <br>
 <br>
-<div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 6</div>
-  <img src="11.jpg" style="width:100%">
-  <div class="text">California</div>
-</div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 6</div>
-  <img src="B2.jpg" style="width:100%">
-  <div class="text">Capital from Sacramento</div>
-</div>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="dia1.png" style="width:100%">
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 6</div>
-  <img src="C2.jpg" style="width:100%">
-  <div class="text">Statistic of population</div>
-</div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="dia2.png" style="width:100%">
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">4 / 6</div>
-  <img src="D.png" style="width:100%">
-  <div class="text">Golden Gate Bridge (night time)</div>
-</div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>  
+    <img src="dia3.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="dia4.png" style="width:100%">
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">5 / 6</div>
-  <img src="e.jpg" style="width:100%">
-  <div class="text">Yosemite National Park</div>
-</div>
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+     <img src="dia5.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="dia6.png" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 
-<div class="mySlides fade">
-  <div class="numbertext">6 / 6</div>
-  <img src="F.jpg" style="width:100%">
-  <div class="text">Disneyland park Anaheim"</div>
-</div>
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-  <span class="dot" onclick="currentSlide(6)"></span> 
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="dia1.png" style="width:100%" onclick="currentSlide(1)" alt="Paris">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="dia2.png" style="width:100%" onclick="currentSlide(2)" alt="Les nourritures">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="dia3.png" style="width:100%" onclick="currentSlide(3)" alt="Les nourritures">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="dia4.png" style="width:100%" onclick="currentSlide(4)" alt="Les nourritures">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="dia5.png" style="width:100%" onclick="currentSlide(5)" alt="Boissons">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="dia6.png" style="width:100%" onclick="currentSlide(6)" alt="Site touristique">
+    </div>
+  </div>
 </div>
 
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
-    function openCity(cityName,elmnt,color) {
+
+        function openCity(cityName,elmnt,color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -268,12 +327,8 @@ function showSlides(n) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-</script>
-
-
-
-
-
-
-    </body>
+        
+  
+        </script>
+</body>
 </html>
