@@ -14,6 +14,10 @@ body {
   font-family: Arial;
   margin: 0;
 }
+* {
+  box-sizing: border-box;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -46,7 +50,7 @@ ul li:hover {
 }
 
 .close:hover {background: #bbb;}
-* {
+                
   box-sizing:  border-box;
 }
 
@@ -242,17 +246,16 @@ img {vertical-align: middle;}
     
 
 <ul>
-<li><button class="tablink" onclick="openCity('P', this, '#7F0000')" >Paris</button></li>
-<li><button class="tablink" onclick="openCity('L', this, '#98150C')">Les nourritures</button></li>
-<li><button class="tablink" onclick="openCity('S', this, '#942007')">Site touristique</button></li>
-<li><button class="tablink" onclick="openCity('D', this, '#AA170D')">Disneyland et l'hôtel</button></li>
+<li><span class="close">&times;</span><button class="tablink" onclick="openCity('P', this, '#7F0000')" >Paris</button></li>
+<li><span class="close">&times;</span><button class="tablink" onclick="openCity('L', this, '#98150C')">Les nourritures</button></li>
+<li><span class="close">&times;</span><button class="tablink" onclick="openCity('S', this, '#942007')">Site touristique</button></li>
+<li><span class="close">&times;</span><button class="tablink" onclick="openCity('D', this, '#AA170D')">Disneyland et l'hôtel</button></li>
 </ul>
 <br>
 <br>
 <br>
 <br>
 <br>
-
 
 <div class="container">
   <div class="mySlides">
@@ -360,7 +363,8 @@ function showSlides(n) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
         
-  var closebtns = document.getElementsByClassName("close");
+
+        var closebtns = document.getElementsByClassName("close");
 var i;
 
 for (i = 0; i < closebtns.length; i++) {
